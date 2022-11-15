@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="food.css">
+    <style>
+    body{
+        margin:50px;
+        text-align: center;
+    }
+    #divpic{
+        width:350px;
+        height:350px;
+        text-align:center;
+    }
+    .photodec{
+        font-size:1.5em;
+    }
+    h1{
+        text-align: center;
+        color:green;
+        padding:20px;
+        outline-style: dotted;
+        outline-color: blueviolet;
+    }
+    nav{
+        background-color:rebeccapurple;
+        display: grid;
+        place-items:center;
+    }
+    nav ul{
+        list-style-type: disc;
+    }
+    nav ul a{
+        display:inline-block;
+        padding:20px;
+        text-decoration: dashed;
+        color:greenyellow;
+        transition: 0.25 ease-in;
+    }
+    nav ul a:hover{
+        background-color:green;
+        color:orange;
+    }
+    .item{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding:20px 20px;
+        grid-column-gap:20px;
+        grid-row-gap:30px;
+    }
+    .item img{
+        width:300px;
+        height:200px;
+        object-fit: cover;
+        cursor:pointer;
+        transform: 0.25 ease;
+    }
+    .item img:hover{
+        transform: scale(1.04);
+    }
+    .item button{
+        width:100px;
+        height:50px;
+        text-align:center;
+        border:none;
+        outline:none;
+        background-color:rgb(168, 27, 168);
+        color: rgb(77, 181, 29);
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 20px;
+        display: block;
+        margin:0 auto;
+        transition: 0.25 all;
+    }
+    .item button:hover{
+        transform:scale(1.08);
+    }
+    .ak{
+        background-color: rgb(185, 189, 69);
+    }
+    </style>
+</head>
+<body>
+    <div class="ak">
+    <div class="one"></div>
+    <h1>PiZzErIa</h1>
+    <h2>Foodie place</h2>
+    <nav>
+        <ul>
+            <a href="#"><li>HOME</li></a>
+            <a href="#"><li>ORDER</li></a>
+            <a href="#"><li>NEAR</li></a>
+            <a href="#"><li>ABOUT</li></a> 
+        </ul>
+    </nav>
+    <section class="item">
+        <div id="div pic">
+            <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668484996/images_lyrn1m.jpg"/><br>
+        <span class="photodesc">Pizza</span>
+            <button>order<br>9 w 0$</button>
+        </div>
+        <div id="div pic">
+            <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668485880/large_feast_side_mobile_xxozwq.png"/>
+        <span class="photodesc">Mushroom pizza</span>
+        <button>order<br>110$</button></div>
+        <div id="div pic">
+            <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668493821/qje5psnseep3nl9qjdax.jpg"/>
+            <span class="photodesc">Veggie Pizza</span>
+            <button>order<br>100$</button></div>
+        <div id=" div pic">
+            <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668495896/bbq-chicken-pizza_fai1sb.jpg"/>
+            <span class ="photodesc">Chicken pizza</span>
+            <button>order<br>200$</button></div>
+        <div id="div pic">
+                <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668496077/eh83pu45u8hl5oyqbuc4.jpg"/>
+                <span class="photodesc">Cococola</span>
+                <button>order<br>50$</button></div>
+        <div id="div pic">
+            <img src="https://res.cloudinary.com/digdliiab/image/upload/v1668496015/easy-french-fries-1-500x500_xgchk1.jpg"/>
+            <span class="photodesc">French fries</span>
+            <button>order<br>40$</button>
+        </div>
+        </section></div>
+    </section>
+</body>
+</html>
